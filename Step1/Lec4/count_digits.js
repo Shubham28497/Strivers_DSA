@@ -16,4 +16,4 @@ function countDigit(n) {
     }
     console.log(count);
 }
-countDigit(7789);
+countDigit(7789); //output 4
