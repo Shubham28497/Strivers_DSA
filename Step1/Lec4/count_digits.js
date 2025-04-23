@@ -17,3 +17,5 @@ function countDigit(n) {
     console.log(count);
 }
 countDigit(7789); //output 4
+
+//TC: O(log n)
