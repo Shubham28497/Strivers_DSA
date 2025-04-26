@@ -12,3 +12,5 @@ var printDiv= function(x){
  
 }
 printDiv(36)
+
+// TC: 0(N)
