@@ -49,3 +49,5 @@ var findGCD = function(a,b){
  let b = 5;
  
  console.log("HCF/GCD is:", findGCD(a, b)); 
+
+//  TC:O(log(min(a, b)))
