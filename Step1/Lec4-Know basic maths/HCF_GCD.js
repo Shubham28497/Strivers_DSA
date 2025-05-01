@@ -30,3 +30,10 @@ console.log("HCF/GCD is:", findGCD(num1, num2));
 // GCD(a, b) = GCD(b, a % b)
 // Repeat this until b = 0. The result is a.
 
+// a = 48, b = 18
+
+// Step 1: 48 % 18 = 12         → GCD(48, 18) = GCD(18, 12)
+// Step 2: 18 % 12 = 6          → GCD(18, 12) = GCD(12, 6)
+// Step 3: 12 % 6 = 0           → GCD(12, 6) = GCD(6, 0)
+
+// Now b = 0, so the GCD is a = 6
