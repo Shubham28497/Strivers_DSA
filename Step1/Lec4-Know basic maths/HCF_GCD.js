@@ -20,4 +20,6 @@ var findGCD = function(num1,num2){
 let num1 = 10;
 let num2 = 5;
 
-console.log("HCF/GCD is:", findGCD(num1, num2));
+console.log("HCF/GCD is:", findGCD(num1, num2)); 
+
+//TC : O(min(a, b))
