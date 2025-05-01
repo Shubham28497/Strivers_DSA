@@ -37,3 +37,15 @@ console.log("HCF/GCD is:", findGCD(num1, num2));
 // Step 3: 12 % 6 = 0           → GCD(12, 6) = GCD(6, 0)
 
 // Now b = 0, so the GCD is a = 6
+var findGCD = function(a,b){
+    while(b!==0){
+        let temp=b;
+        b=a%b;
+        a=temp
+    }
+    return a
+ }
+ let a = 10;
+ let b = 5;
+ 
+ console.log("HCF/GCD is:", findGCD(a, b)); 
