@@ -11,3 +11,4 @@ function printNnames(name,n){
 }
 
 printNnames("Shubh",5)
+// TC: O(N)
