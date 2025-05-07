@@ -58,3 +58,4 @@ function countFrequencies(arr){
     })
    }
    countFrequencies([10, 5, 10, 15, 10, 5]);
+   TC:O(n)
