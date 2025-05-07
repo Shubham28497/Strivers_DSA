@@ -26,3 +26,21 @@ if(arr[i]===item)
 return count
 }
 console.log(frequency([1, 2, 3, 2, 1, 2, 3, 1,4],4))
+//brute force to count each element frequency
+function countFrequencies(arr){
+    const visited=[];
+    for(let i=0;i<arr.length;i++){
+        if(visited.includes(arr[i])) continue;
+    
+    let count=1;
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[i]===arr[j])
+        count++
+    }
+ visited.push(arr[i])
+ console.log(arr[i],count)
+}
+    
+}
+const arr = [10, 5, 10, 15, 10, 5];
+countFrequencies(arr);
