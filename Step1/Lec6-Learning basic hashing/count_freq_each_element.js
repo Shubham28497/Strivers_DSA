@@ -44,3 +44,5 @@ function countFrequencies(arr){
 }
 const arr = [10, 5, 10, 15, 10, 5];
 countFrequencies(arr);
+
+// TC:O(n^2)
