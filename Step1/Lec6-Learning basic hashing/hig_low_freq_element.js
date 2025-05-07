@@ -40,4 +40,4 @@ function findHighLowFrequency(arr) {
   }
   // Example
   findHighLowFrequency([10, 5, 10, 15, 10, 5,]);
-  
+//   TC:(n^2)
