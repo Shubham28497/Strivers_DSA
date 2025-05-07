@@ -46,3 +46,15 @@ const arr = [10, 5, 10, 15, 10, 5];
 countFrequencies(arr);
 
 // TC:O(n^2)
+
+//with map 
+function countFrequencies(arr){
+    let freqMap=new Map();
+    arr.forEach((num)=>{
+        freqMap.set(num,(freqMap.get(num)||0)+1)
+    })
+    freqMap.forEach((value,key)=>{
+        console.log(key,value)
+    })
+   }
+   countFrequencies([10, 5, 10, 15, 10, 5]);
