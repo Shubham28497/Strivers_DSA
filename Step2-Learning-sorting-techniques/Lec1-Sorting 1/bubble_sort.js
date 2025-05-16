@@ -17,3 +17,6 @@ function bubbleSort(arr){
 }
 const arr = [5, 1, 4, 2, 8];
 console.log(bubbleSort(arr));
+//TC:
+//Worst and Avg: O(n^2)
+//Best: O(n)
