@@ -15,3 +15,7 @@ function insertionSort(arr) {
   }
   arr = [8, 4, 1, 5, 2]
   console.log(insertionSort(arr))
+  // Best Case Time Complexity = O(n)
+// Worst Case Time Complexity = O(n^2)
+// Average Case Time Complexity = O(n^2)
+// Space Complexity = O(1)
