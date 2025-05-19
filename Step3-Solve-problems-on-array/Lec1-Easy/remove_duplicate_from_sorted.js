@@ -16,3 +16,4 @@ function removeDuplicates(arr) {
    console.log(removeDuplicates(arr))
 //    TC:O(n)
 //SC:O(1)
+// console.log(arr.slice(0, removeDuplicates(arr))); // [1, 2, 3]
