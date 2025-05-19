@@ -29,3 +29,5 @@ return [...quickSort(left), pivot, ...quickSort(right)];
 }
 let arr=[8,7,6,3,4,5,2,1]
 console.log(quickSort(arr))
+// Time Complexity - O(nlog n)
+// Space Complexity - O(n)
