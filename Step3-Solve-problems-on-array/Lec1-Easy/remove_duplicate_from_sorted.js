@@ -14,6 +14,15 @@ function removeDuplicates(arr) {
    }
    const arr = [1,1,2,2,2,3,3];
    console.log(removeDuplicates(arr))
+//    | Step | `i` | `j` | `arr[i]` | `arr[j]` | Action               | Array State      |
+// | ---- | --- | --- | -------- | -------- | -------------------- | ---------------- |
+// | Init | 0   | 1   | 1        | 1        | same → do nothing    | \[1,1,2,2,2,3,3] |
+// | 1    | 0   | 2   | 1        | 2        | new → arr\[1]=2, i++ | \[1,2,2,2,2,3,3] |
+// | 2    | 1   | 3   | 2        | 2        | same → do nothing    | \[1,2,2,2,2,3,3] |
+// | 3    | 1   | 4   | 2        | 2        | same → do nothing    | \[1,2,2,2,2,3,3] |
+// | 4    | 1   | 5   | 2        | 3        | new → arr\[2]=3, i++ | \[1,2,3,2,2,3,3] |
+// | 5    | 2   | 6   | 3        | 3        | same → do nothing    | \[1,2,3,2,2,3,3] |
+
 //    TC:O(n)
 //SC:O(1)
 // console.log(arr.slice(0, removeDuplicates(arr))); // [1, 2, 3]
