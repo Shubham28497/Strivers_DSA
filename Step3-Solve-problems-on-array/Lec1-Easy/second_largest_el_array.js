@@ -25,3 +25,5 @@ function secondLargest(arr){
 }
 let arr =[10, 5, 8, 20];
 console.log(secondLargest(arr))
+//TC: O(n)
+//SC:O(1)
