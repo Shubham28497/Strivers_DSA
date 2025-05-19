@@ -53,6 +53,15 @@ function countFrequencies(arr){
     arr.forEach((num)=>{
         freqMap.set(num,(freqMap.get(num)||0)+1)
     })
+//     | Iteration | num | get(num)  | (get(num) \|\| 0) + 1 | Action     | freqMap state           |
+// | --------- | --- | --------- | --------------------- | ---------- | ----------------------- |
+// | 1         | 10  | undefined | 0 + 1 = 1             | set(10, 1) | {10 → 1}                |
+// | 2         | 5   | undefined | 0 + 1 = 1             | set(5, 1)  | {10 → 1, 5 → 1}         |
+// | 3         | 10  | 1         | 1 + 1 = 2             | set(10, 2) | {10 → 2, 5 → 1}         |
+// | 4         | 15  | undefined | 0 + 1 = 1             | set(15, 1) | {10 → 2, 5 → 1, 15 → 1} |
+// | 5         | 10  | 2         | 2 + 1 = 3             | set(10, 3) | {10 → 3, 5 → 1, 15 → 1} |
+// | 6         | 5   | 1         | 1 + 1 = 2             | set(5, 2)  | {10 → 3, 5 → 2, 15 → 1} |
+
     freqMap.forEach((value,key)=>{
         console.log(key,value)
     })
