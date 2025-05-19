@@ -25,3 +25,5 @@ const arr2 = [10, 4, 7, 21, 3];
 const max = arr2.reduce((a, b) => (a > b ? a : b));
 
 console.log(max); // Output: 21
+// 🔹 Time Complexity: O(n)
+// 🔹 Space Complexity: O(1) (constant space)
