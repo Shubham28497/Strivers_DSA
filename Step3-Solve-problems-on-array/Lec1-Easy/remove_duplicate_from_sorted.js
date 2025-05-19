@@ -14,3 +14,5 @@ function removeDuplicates(arr) {
    }
    const arr = [1,1,2,2,2,3,3];
    console.log(removeDuplicates(arr))
+//    TC:O(n)
+//SC:O(1)
