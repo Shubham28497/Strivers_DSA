@@ -17,3 +17,5 @@ function linearSearch(arr,target){
 let arr = [2, 3, 4, 5, 3];
 let target = 3;
 console.log(linearSearch(arr, target));
+//TC: O(n)
+//TC: O(1)
