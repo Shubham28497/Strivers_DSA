@@ -61,3 +61,6 @@ function moveZerosToEnd(arr){
     // j = 5 → exit loop
     let arr = [0, 1, 0, 3, 12]
     console.log(moveZerosToEnd(arr))
+
+    //TC:O(n)
+    //SC:O(1)
