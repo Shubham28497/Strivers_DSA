@@ -25,3 +25,21 @@ function leftRotateByOne(arr) {
     console.log(leftRotateBrute(arr,D))
     //TC: O(n*d)
     //SC:O(1)
+
+    // 2.Temporary array approach
+    function leftRotateTempArray(arr,d){
+        let n=arr.length;
+         d = d%n; //In case d>n
+        let temp=arr.slice(0,d)//copy first d elements
+        for(let i=d;i<n;i++){
+            arr[i-d]=arr[i] // Shift remaining elements left
+        }
+        for(let i=0;i<temp.length;i++){
+            arr[n-d+i]=temp[i]
+        }
+        return arr
+        
+    }
+    let arr2 = [1, 2, 3, 4, 5]
+    let D1 = 2 
+    console.log(leftRotateTempArray(arr2,D1))
