@@ -17,3 +17,5 @@ function findMissingNumber(arr){
  
  let arr = [1,2,3,4,5,7]
  console.log(findMissingNumber(arr))
+ //TC: O(n)
+//  SC:O(1)
