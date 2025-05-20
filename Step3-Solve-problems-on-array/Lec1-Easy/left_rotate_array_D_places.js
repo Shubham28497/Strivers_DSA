@@ -43,3 +43,5 @@ function leftRotateByOne(arr) {
     let arr2 = [1, 2, 3, 4, 5]
     let D1 = 2 
     console.log(leftRotateTempArray(arr2,D1))
+    //TC:O(n)
+    //SC:O(d)
