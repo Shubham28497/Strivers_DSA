@@ -50,5 +50,14 @@ function moveZerosToEnd(arr){
     }
     return arr
     }
+    // j = 3
+    // arr[3] = 0 → arr becomes [1, 3, 12, 0, 12]
+    
+    // j = 4
+    
+    // ➤ j = 4
+    // arr[4] = 0 → arr becomes [1, 3, 12, 0, 0]
+    
+    // j = 5 → exit loop
     let arr = [0, 1, 0, 3, 12]
     console.log(moveZerosToEnd(arr))
