@@ -33,6 +33,12 @@ function leftRotateByOne(arr) {
         let temp=arr.slice(0,d)//copy first d elements
         for(let i=d;i<n;i++){
             arr[i-d]=arr[i] // Shift remaining elements left
+
+//i = 2 → arr[0] = arr[2] → arr[0] = 3 → [3, 2, 3, 4, 5]
+// i = 3 → arr[1] = arr[3] → arr[1] = 4 → [3, 4, 3, 4, 5]
+// i = 4 → arr[2] = arr[4] → arr[2] = 5 → [3, 4, 5, 4, 5]
+// ✅ After shifting: [3, 4, 5, 4, 5]
+
         }
         for(let i=0;i<temp.length;i++){
             arr[n-d+i]=temp[i]
