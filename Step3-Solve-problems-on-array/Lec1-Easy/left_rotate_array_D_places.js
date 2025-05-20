@@ -23,3 +23,5 @@ function leftRotateByOne(arr) {
     let arr = [1, 2, 3, 4, 5]
     let D = 2 
     console.log(leftRotateBrute(arr,D))
+    //TC: O(n*d)
+    //SC:O(1)
