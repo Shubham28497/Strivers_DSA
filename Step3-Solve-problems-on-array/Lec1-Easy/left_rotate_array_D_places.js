@@ -37,6 +37,9 @@ function leftRotateByOne(arr) {
         for(let i=0;i<temp.length;i++){
             arr[n-d+i]=temp[i]
         }
+// n - d = 5 - 2 = 3
+// i = 0 → arr[3] = temp[0] → arr[3] = 1 → [3, 4, 5, 1, 5]
+// i = 1 → arr[4] = temp[1] → arr[4] = 2 → [3, 4, 5, 1, 2]
         return arr
         
     }
