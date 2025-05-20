@@ -17,3 +17,5 @@ function leftRotateByOne(arr){
 }
 let arr=[1, 2, 3, 4, 5]
 console.log(leftRotateByOne(arr))
+//TC: O(N)
+//SC: O(1)
