@@ -23,4 +23,6 @@ function findMaxConsecutiveOnes(arr){
   }
   let arr = [1, 1, 0, 1, 1, 1]
   console.log(findMaxConsecutiveOnes(arr))
+  //TC:O(n)
+  //SC:O(1)
   
