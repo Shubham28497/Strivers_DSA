@@ -20,3 +20,4 @@ function longestSubarrayWithSumK(arr,k){
 let arr= [-3, 2, 1]
 let k=6;
 console.log(longestSubarrayWithSumK(arr,k))
+// TC:O(n^2)
