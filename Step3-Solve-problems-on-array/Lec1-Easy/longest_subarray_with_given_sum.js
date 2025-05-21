@@ -44,3 +44,4 @@ function longestSubarrayWithSumK_Positive(arr, K) {
 }
 let arr2 = [1, 2, 1, 1, 1, 3, 1];
 let K = 5;
+//TC: O(n)
