@@ -18,3 +18,4 @@ function appearOnce(arr){
 }
 let arr= [1, 2, 2, 4, 3, 1, 4,3,5]
 console.log(appearOnce(arr))
+// TC:O(n^2)
