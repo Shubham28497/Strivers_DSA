@@ -49,3 +49,4 @@ function findSingleNumber(arr) {
 }
 let arr2 = [4, 1, 2, 1, 2];
 console.log(findSingleNumber(arr2)); // Output: 4
+//TC:O(n)
