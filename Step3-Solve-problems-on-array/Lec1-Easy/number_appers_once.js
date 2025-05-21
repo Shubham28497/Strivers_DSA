@@ -19,3 +19,24 @@ function appearOnce(arr){
 let arr= [1, 2, 2, 4, 3, 1, 4,3,5]
 console.log(appearOnce(arr))
 // TC:O(n^2)
+
+// 2.With XoR
+// XOR compares two binary digits:
+
+// If the bits are the same → result is 0
+
+// If the bits are different → result is 1
+// Step 1: result = 0 ^ 4
+// Binary:
+// 0   = 0000
+// 4   = 0100
+// -----------
+// XOR = 0100 → 4
+// 🟢 result =4
+// Step 2: result = 4 ^ 1
+// Binary:
+// 4 = 0100
+// 1 = 0001
+// ----------
+//     0101 = 5
+// 🟢 result = 5
