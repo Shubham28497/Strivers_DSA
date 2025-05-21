@@ -40,3 +40,12 @@ console.log(appearOnce(arr))
 // ----------
 //     0101 = 5
 // 🟢 result = 5
+function findSingleNumber(arr) {
+    let result = 0;
+    for (let i = 0; i < arr.length; i++) {
+        result ^= arr[i]; // XOR each element at index i
+    }
+    return result;
+}
+let arr2 = [4, 1, 2, 1, 2];
+console.log(findSingleNumber(arr2)); // Output: 4
