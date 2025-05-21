@@ -16,7 +16,31 @@ function longestSubarrayWithSumK(arr,k){
     }
     return maxLength
 }
-let arr= [10, 5, 2, 7, 1, 9]
-let k=15;
+let arr= [1, 2, 3, -2, 5]
+let k=5;
 console.log(longestSubarrayWithSumK(arr,k))
 // TC:O(n^2)
+
+// 2. Two pointer approach/Sliding window
+function longestSubarrayWithSumK_Positive(arr, K) {
+    let left = 0, right = 0, sum = 0, maxLength = 0;
+
+    while (right < arr.length) {
+        sum += arr[right];
+
+        while (sum > K && left <= right) {
+            sum -= arr[left];
+            left++;
+        }
+
+        if (sum === K) {
+            maxLength = Math.max(maxLength, right - left + 1);
+        }
+
+        right++;
+    }
+
+    return maxLength;
+}
+let arr2 = [1, 2, 1, 1, 1, 3, 1];
+let K = 5;
