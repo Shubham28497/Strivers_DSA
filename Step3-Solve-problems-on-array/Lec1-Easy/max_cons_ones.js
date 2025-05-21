@@ -25,4 +25,58 @@ function findMaxConsecutiveOnes(arr){
   console.log(findMaxConsecutiveOnes(arr))
   //TC:O(n)
   //SC:O(1)
-  
+//   cur = 0
+
+// maxCur = 0
+
+// i = 0, arr[0] = 1:
+// It's 1, so:
+
+// cur = 1
+
+// maxCur becomes 1 (since cur > maxCur)
+
+// ✅ Current max streak: 1
+
+// i = 1, arr[1] = 1:
+// It's 1, so:
+
+// cur = 2
+
+// maxCur becomes 2 (since cur > maxCur)
+
+// ✅ Current max streak: 2
+
+// i = 2, arr[2] = 0:
+// It's 0, so:
+
+// cur = 0 (streak broken)
+
+// ✅ Max streak stays 2
+
+// i = 3, arr[3] = 1:
+// It's 1, so:
+
+// cur = 1
+
+// maxCur stays 2
+
+// ✅ Current max streak: 2
+
+// i = 4, arr[4] = 1:
+// It's 1, so:
+
+// cur = 2
+
+// maxCur stays 2
+
+// ✅ Current max streak: 2
+
+// i = 5, arr[5] = 1:
+// It's 1, so:
+
+// cur = 3
+
+// maxCur becomes 3
+
+// ✅ New max streak: 3
