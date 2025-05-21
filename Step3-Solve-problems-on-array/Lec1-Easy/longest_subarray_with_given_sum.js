@@ -19,3 +19,4 @@ function longestSubarrayWithSumK(arr,k){
 let arr= [10, 5, 2, 7, 1, 9]
 let k=15;
 console.log(longestSubarrayWithSumK(arr,k))
+// TC:O(n^2)
