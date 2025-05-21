@@ -21,3 +21,31 @@ let arr= [-3, 2, 1]
 let k=6;
 console.log(longestSubarrayWithSumK(arr,k))
 // TC:O(n^2)
+
+function longestSubarrayWithSumK(arr, K) {
+    let prefixSum = 0;
+    let maxLength = 0;
+    let map = new Map(); // key = prefixSum, value = index
+
+    for (let i = 0; i < arr.length; i++) {
+        prefixSum += arr[i];
+
+        // Case 1: entire array till i sums to K
+        if (prefixSum === K) {
+            maxLength = i + 1;
+        }
+
+        // Case 2: check if there's a prefixSum that makes the subarray sum to K
+        if (map.has(prefixSum - K)) {
+            const prevIndex = map.get(prefixSum - K);
+            maxLength = Math.max(maxLength, i - prevIndex);
+        }
+
+        // Case 3: store only the first occurrence of each prefixSum
+        if (!map.has(prefixSum)) {
+            map.set(prefixSum, i);
+        }
+    }
+
+    return maxLength;
+}
