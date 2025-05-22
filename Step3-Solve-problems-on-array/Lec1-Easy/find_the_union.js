@@ -14,3 +14,4 @@ function unionUsingSet(arr1,arr2){
 arr1 = [1, 2, 3, 4];
 arr2 = [3, 4, 5, 6];
 console.log(unionUsingSet(arr1,arr2))
+// Time: O(n + m)
