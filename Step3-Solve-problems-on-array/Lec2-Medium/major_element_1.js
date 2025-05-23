@@ -22,4 +22,23 @@ function majorityElement(arr){
  let arr = [7, 0, 0, 1, 7, 7, 2, 7, 7]
  console.log(majorityElement(arr))
  //TC: O(n^2)
- 
+//  2.Optimal approach : Boyer-Moore voting algo
+function majorityElement(arr){
+    let count=0;
+    let candidate=null;
+    for(let i=0;i<arr.length;i++){
+        if(count==0){
+            candidate=arr[i]
+        }
+        if(arr[i]===candidate){
+            count++
+        }
+        else{
+            count--
+        }
+    }
+    return candidate
+  }
+  let arr2 = [7, 0, 0, 1, 7, 7, 2, 7, 7]
+  console.log(majorityElement(arr2))
+  
