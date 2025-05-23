@@ -20,3 +20,4 @@ function maxSubArraySum(arr){
 }
 let arr= [2, 3, 5, -2, 7, -4]
 console.log(maxSubArraySum(arr))
+//TC:O(n^2)
