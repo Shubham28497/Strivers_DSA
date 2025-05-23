@@ -62,3 +62,4 @@ function Sort012(arr){
  // let target = 7
  Sort012(arr2)
  console.log(arr2)
+ //TC:O(n)
