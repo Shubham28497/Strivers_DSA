@@ -35,3 +35,4 @@ function Sort012(arr){
 let arr = [1, 0, 2, 1, 0]
 Sort012(arr)
 console.log(arr)
+//TC: O(2n)
