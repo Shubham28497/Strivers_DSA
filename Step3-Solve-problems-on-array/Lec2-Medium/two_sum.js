@@ -19,3 +19,4 @@ function twoSum(arr,target){
 let arr = [1, 3, 5, -7, 6, -3]
 let target = 0
 console.log(twoSum(arr,target))
+// TC:O(n^2)
