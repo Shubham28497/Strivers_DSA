@@ -41,4 +41,5 @@ function majorityElement(arr){
   }
   let arr2 = [7, 0, 0, 1, 7, 7, 2, 7, 7]
   console.log(majorityElement(arr2))
+  //TC:O(n)
   
