@@ -36,3 +36,4 @@ function twoSum(nums, target) {
   let arr2 = [1, 6, 2, 10, 3]
   let target2 = 7
   console.log(twoSum(arr2,target2))
+  //TC: O(n)
