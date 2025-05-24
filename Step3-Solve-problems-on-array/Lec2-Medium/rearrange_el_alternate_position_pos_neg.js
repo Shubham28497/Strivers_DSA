@@ -34,3 +34,4 @@ function rearrange(arr){
   }
   let arr= [1, 2, -4, -5]
   console.log(rearrange(arr))
+  //TC: O(n)
