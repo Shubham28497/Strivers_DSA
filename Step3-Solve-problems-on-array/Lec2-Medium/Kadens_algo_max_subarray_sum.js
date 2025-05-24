@@ -21,3 +21,20 @@ function maxSubArraySum(arr){
 let arr= [2, 3, 5, -2, 7, -4]
 console.log(maxSubArraySum(arr))
 //TC:O(n^2)
+// 2.Kaden's algo
+function maxSubArraySum(arr){
+    let sum=0;
+    let maxSum=arr[0];
+    for(let i=0;i<arr.length;i++){
+        sum=sum+arr[i]
+        if(sum>maxSum){
+            maxSum=sum;
+        }
+        if(sum<0){
+            sum=0;
+        }
+    }
+    return maxSum
+}
+let arr2= [2, 3, 5, -2, 7, -4]
+console.log(maxSubArraySum(arr2))
