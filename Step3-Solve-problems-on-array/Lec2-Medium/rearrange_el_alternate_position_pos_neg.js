@@ -55,3 +55,7 @@ function rearrange(arr){
   }
   let arr2= [1, 2, -4, -5,-6,-8,5,2]
   console.log(rearrange(arr2))
+
+  //2. 2Variety
+  //If positive and -ve elements are not equal in an array 
+//   arr=[1,2,-5,8,-3,2,6]
