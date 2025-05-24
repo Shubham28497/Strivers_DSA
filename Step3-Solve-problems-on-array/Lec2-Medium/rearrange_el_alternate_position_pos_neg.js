@@ -59,3 +59,31 @@ function rearrange(arr){
   //2. 2Variety
   //If positive and -ve elements are not equal in an array 
 //   arr=[1,2,-5,8,-3,2,6]
+
+function rearrange(arr) {
+    let pos = [], neg = [];
+  
+    // Separate positives and negatives
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] >= 0) pos.push(arr[i]);
+      else neg.push(arr[i]);
+    }
+  
+    let result = [];
+    let i = 0;
+  
+    // Interleave as long as both have values
+    while (i < pos.length && i < neg.length) {
+      result.push(pos[i]);
+      result.push(neg[i]);
+      i++;
+    }
+  
+    // Append the remaining elements (whichever is left)
+    while (i < pos.length) result.push(pos[i++]);
+    while (i < neg.length) result.push(neg[i++]);
+  
+    return result;
+  }
+  let arr3= [-1, 2, 3, 4,-3,1]
+  console.log(rearrange(arr3))
