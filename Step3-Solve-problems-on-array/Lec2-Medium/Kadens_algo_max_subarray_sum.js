@@ -38,3 +38,4 @@ function maxSubArraySum(arr){
 }
 let arr2= [2, 3, 5, -2, 7, -4]
 console.log(maxSubArraySum(arr2))
+//TC:O(n)
