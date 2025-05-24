@@ -35,3 +35,23 @@ function rearrange(arr){
   let arr= [1, 2, -4, -5]
   console.log(rearrange(arr))
   //TC: O(n)
+
+//   2.Slightly optimal approach
+function rearrange(arr){
+    let result=[]
+    let posIndex=0;
+    let negIndex=1;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]<0){
+            result[negIndex]=arr[i]
+            negIndex+=2
+        }
+        else{
+            result[posIndex]=arr[i]
+            posIndex+=2
+        }
+    }
+    return result
+  }
+  let arr2= [1, 2, -4, -5,-6,-8,5,2]
+  console.log(rearrange(arr2))
