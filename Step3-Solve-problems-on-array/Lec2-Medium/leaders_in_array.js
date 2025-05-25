@@ -48,3 +48,4 @@ function leadersInArray(arr){
 }
 let arr2=[1, 2, 5, 3, 1, 2]
 console.log(leadersInArray(arr2))
+//TC:O(n)
