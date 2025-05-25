@@ -31,3 +31,4 @@ function leadersInArray(arr){
 }
 let arr=[1, 2, 5, 3, 1, 2]
 console.log(leadersInArray(arr))
+//TC:O(n)
