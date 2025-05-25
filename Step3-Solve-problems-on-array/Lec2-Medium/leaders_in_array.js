@@ -32,3 +32,19 @@ function leadersInArray(arr){
 let arr=[1, 2, 5, 3, 1, 2]
 console.log(leadersInArray(arr))
 //TC:O(n^2)
+// 2.better approach
+function leadersInArray(arr){
+    let result=[]
+    let maxLeader=arr[arr.length-1]
+    result.push(maxLeader)
+    for(let i=arr.length-2;i>0;i--){
+        if(arr[i]>=maxLeader){
+            maxLeader=arr[i]
+            result.push(maxLeader)
+        }
+    }
+    // result.reverse()
+    return result
+}
+let arr2=[1, 2, 5, 3, 1, 2]
+console.log(leadersInArray(arr2))
