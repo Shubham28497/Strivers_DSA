@@ -28,3 +28,4 @@ function countSubArray(arr,k){
 let arr=[1, 1, 1]
 let k=2;
 console.log(countSubArray(arr,k))
+//TC:O(n^2)
