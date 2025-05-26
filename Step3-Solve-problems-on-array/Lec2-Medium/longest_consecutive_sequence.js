@@ -94,3 +94,4 @@ function longestConsecutiveSort(nums) {
   
     return maxLen;
   }
+//TC: O(nlogn)
