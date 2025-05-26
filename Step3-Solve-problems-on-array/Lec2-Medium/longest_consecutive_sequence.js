@@ -116,3 +116,5 @@ function longestConsecutiveSequence(arr,k){
 }
 let arr=[100, 4, 200, 1, 3, 2]
 console.log(longestConsecutiveSequence(arr))
+
+//Tc: O(n)
