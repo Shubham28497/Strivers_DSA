@@ -95,3 +95,24 @@ function longestConsecutiveSort(nums) {
     return maxLen;
   }
 //TC: O(nlogn)
+
+// 3.Optimal appraoch
+function longestConsecutiveSequence(arr,k){
+    let maxLength=0;
+    let numSet=new Set(arr)
+    for(let arr of numSet){
+        if(!numSet.has(arr-1)){
+            let curNum=arr;
+            let count=1;
+        while(numSet.has(curNum+1)){
+            curNum++;
+            count++
+        }
+        maxLength=Math.max(maxLength,count)
+    }
+    }
+    return maxLength
+    
+}
+let arr=[100, 4, 200, 1, 3, 2]
+console.log(longestConsecutiveSequence(arr))
