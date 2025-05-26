@@ -73,3 +73,24 @@ console.log(longestConsecutiveSequence(arr))
 
 // maxLen = max(4, 2) = 4
 
+// 2.Better appraoch
+function longestConsecutiveSort(nums) {
+    if (nums.length === 0) return 0;
+  
+    nums.sort((a, b) => a - b);
+  
+    let maxLen = 1;
+    let currLen = 1;
+  
+    for (let i = 1; i < nums.length; i++) {
+      if (nums[i] === nums[i - 1]) continue; // skip duplicates
+      if (nums[i] === nums[i - 1] + 1) {
+        currLen++;
+        maxLen = Math.max(maxLen, currLen);
+      } else {
+        currLen = 1;
+      }
+    }
+  
+    return maxLen;
+  }
