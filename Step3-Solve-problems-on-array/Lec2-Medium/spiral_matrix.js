@@ -58,3 +58,5 @@ const matrix = [
 
 console.log(spiralOrder(matrix));
 // Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+//TC:O(m*n)
+//SC:O(m*n)
