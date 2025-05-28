@@ -25,3 +25,4 @@ function longestSubArrayWithSumZero(arr){
 }
 let arr=[9, -3, 3, -1, 6, -5]
 console.log(longestSubArrayWithSumZero(arr))
+//TC:O(n^2)
