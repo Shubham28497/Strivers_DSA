@@ -26,3 +26,26 @@ function longestSubArrayWithSumZero(arr){
 let arr=[9, -3, 3, -1, 6, -5]
 console.log(longestSubArrayWithSumZero(arr))
 //TC:O(n^2)
+
+//2. Better approach
+function longestSubArrayWithSumZero(arr) {
+    let sum = 0;
+    let maxLength = 0;
+    const map = new Map();
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+
+        if (sum === 0) {
+            maxLength = i + 1;
+        }
+
+        if (map.has(sum)) {
+            maxLength = Math.max(maxLength, i - map.get(sum));
+        } else {
+            map.set(sum, i);
+        }
+    }
+
+    return maxLength;
+}
