@@ -49,3 +49,4 @@ function longestSubArrayWithSumZero(arr) {
 
     return maxLength;
 }
+//TC:O(n)
