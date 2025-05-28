@@ -26,3 +26,22 @@ function maxProductSubarray(arr){
 let arr=[1,2,3,4,5,0]
 console.log(maxProductSubarray(arr))
 //TC: O(n^2)
+
+//2.better approach
+function maxProduct(nums) {
+  let maxProduct = -Infinity;
+  let prefix = 1, suffix = 1;
+  let n = nums.length;
+
+  for (let i = 0; i < n; i++) {
+    prefix = prefix === 0 ? nums[i] : prefix * nums[i];
+    suffix = suffix === 0 ? nums[n - 1 - i] : suffix * nums[n - 1 - i];
+
+    maxProduct = Math.max(maxProduct, prefix, suffix);
+
+    if (prefix === 0) prefix = 1;
+    if (suffix === 0) suffix = 1;
+  }
+
+  return maxProduct;
+}
