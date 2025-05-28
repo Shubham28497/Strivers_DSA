@@ -25,3 +25,4 @@ function maxProductSubarray(arr){
 }
 let arr=[1,2,3,4,5,0]
 console.log(maxProductSubarray(arr))
+//TC: O(n^2)
