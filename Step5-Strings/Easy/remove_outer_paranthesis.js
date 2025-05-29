@@ -33,3 +33,15 @@ function removeOuterParentheses (s){
 }
 let s = "(()())(())"
 console.log(removeOuterParentheses(s))
+// | Index | Char | open (before) | Action                                      | open (after) | result     |
+// | ----- | ---- | ------------- | ------------------------------------------- | ------------ | ---------- |
+// | 0     | `(`  | 0             | skip adding, increment open                 | 1            | `""`       |
+// | 1     | `(`  | 1             | add `(` to result                           | 2            | `"("`      |
+// | 2     | `)`  | 2             | decrement open, add `)` to result           | 1            | `"()"`     |
+// | 3     | `(`  | 1             | add `(` to result                           | 2            | `"()("`    |
+// | 4     | `)`  | 2             | decrement open, add `)` to result           | 1            | `"()()"`   |
+// | 5     | `)`  | 1             | decrement open, skip adding (outermost `)`) | 0            | `"()()"`   |
+// | 6     | `(`  | 0             | skip adding (outermost `(`), increment open | 1            | `"()()"`   |
+// | 7     | `(`  | 1             | add `(` to result                           | 2            | `"()()("`  |
+// | 8     | `)`  | 2             | decrement open, add `)` to result           | 1            | `"()()()"` |
+// | 9     | `)`  | 1             | decrement open, skip adding                 | 0            | `"()()()"` |
