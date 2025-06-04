@@ -35,4 +35,6 @@ function isIsomorphic(s, t) {
 
     return true;
 }
+console.log(isIsomorphic("paper", "title")); // true
+
 //TC:O(n)
