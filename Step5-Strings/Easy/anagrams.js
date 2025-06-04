@@ -9,3 +9,4 @@ return s1.split('').sort().join()===s2.split('').sort().join()
 const s1 = "geeks";
 const s2 = "kseeg";
 console.log(areAnagrams(s1, s2));
+// Time Complexity: O(m*log(m) + n*log(n))
