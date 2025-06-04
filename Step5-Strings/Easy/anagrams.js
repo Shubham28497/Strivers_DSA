@@ -31,3 +31,4 @@ for(let ch of s2){
 const s3 = "geeks";
 const s4 = "kseeg";
 console.log(areAnagrams(s3, s4));
+//TC:(m+n)
