@@ -20,4 +20,24 @@ console.log(isRotationConcat("waterbottle", "erbottlewat")); // true
 console.log(isRotationConcat("hello", "lohel"));             // true
 console.log(isRotationConcat("hello", "helol"));             // false
 
+//2.Brute force approach
+function isRotationBrute (str1,str2){
+    if(str1.length!==str2.length){
+        return false
+    }
+    for(let i=0;i<str1.length;i++){
+        const rotated=str1.slice(i)+str1.slice(0,i)
+        if(rotated==str2){
+            return true;
+        }
+    }
+    return false
+   
+}
+console.log(isRotationBrute("waterbottle", "erbottlewat")); // true
+console.log(isRotationBrute("hello", "lohel"));             // true
+console.log(isRotationBrute("hello", "helol"));             // false
+
+
+
 
