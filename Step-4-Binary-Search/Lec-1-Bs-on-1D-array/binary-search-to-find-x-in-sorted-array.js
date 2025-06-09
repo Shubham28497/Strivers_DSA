@@ -32,3 +32,4 @@ let target2= 9
 console.log(binarySearch(arr2,target2))
 
 
+// TC:O(logn)
