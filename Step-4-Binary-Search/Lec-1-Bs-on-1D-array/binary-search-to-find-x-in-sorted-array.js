@@ -10,20 +10,6 @@
 // Output: -1
 
 // Explanation: The target integer 2 does not exist in nums so return -1
-// 1.Brute force
-function binarySearch(arr,target){
-   for(let i=0;i<arr.length;i++){
-       if(arr[i]==target){
-           return i
-       }
-   }
-   return -1;
-}
-let arr=[-1,0,3,5,9,12]
-let target= 9
-console.log(binarySearch(arr,target))
-
-// 2.Binary search
 function binarySearch(arr,target){
   let low=0;
   let high=arr.length-1;
