@@ -74,7 +74,7 @@ function find(arr,target){
 let arr2=[1, 3, 5, 5, 5, 5, 67, 123, 125]
 let target2= 5
 console.log(find(arr2,target2))
-
+//TC: O(logn)
 
 
 
