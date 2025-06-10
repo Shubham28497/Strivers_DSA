@@ -27,4 +27,6 @@ let arr=[-1,0,3,5,9,12]
 let target= 9
 console.log(lowerBound(arr,target))
 
+//TC:O(logn)
+
 
