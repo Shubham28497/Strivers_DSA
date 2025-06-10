@@ -55,3 +55,4 @@ function countOccurrences(arr, target) {
 let arr = [1, 1, 2, 2, 2, 2, 2, 3];
 let target = 2;
 console.log(countOccurrences(arr, target)); // Output: 3
+//TC:O(logn)
