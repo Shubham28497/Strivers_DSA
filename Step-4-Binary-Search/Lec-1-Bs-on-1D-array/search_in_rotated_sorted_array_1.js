@@ -40,5 +40,6 @@ function searchElementUnique(arr,target){
 let arr=[4, 5, 6, 7, 0, 1, 2]
 let target= 0
 console.log(searchElementUnique(arr,target))
+//TC:O(logn)
 
 
