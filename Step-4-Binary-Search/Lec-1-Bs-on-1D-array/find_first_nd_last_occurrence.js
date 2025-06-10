@@ -26,5 +26,6 @@ return [first,last]
 let arr=[5, 7, 7, 8, 8, 10]
 let target= 8
 console.log(firstAndLastOccurrence(arr,target))
+//Tc:O(N)
 
 
