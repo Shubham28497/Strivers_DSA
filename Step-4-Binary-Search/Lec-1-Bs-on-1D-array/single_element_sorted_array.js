@@ -8,4 +8,27 @@
 
 // Output:3
 
-// Explanation: Only the number 3 appears once in the array.
+// Explanation: Only the number 3 appears once in the array.    
+
+function singleNonDuplicate(arr){
+    let low=0;
+    let high=arr.length-1;
+    while(low<=high){
+        let mid=Math.floor((low+high)/2);
+        if(low==high){
+            return arr[low]
+        }
+        if(mid%2==1){
+            mid--
+        }
+        if(arr[mid]===arr[mid+1]){
+            low=mid+2
+        }
+        else{
+            high=mid
+        }
+    }
+    return -1;
+}
+let arr = [1, 1, 2, 3, 3, 4, 4];
+console.log((singleNonDuplicate(arr)))
