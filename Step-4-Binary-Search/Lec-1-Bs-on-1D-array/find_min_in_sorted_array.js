@@ -28,5 +28,5 @@ function minSorted(arr){
 }
 let arr=[4,5,6,7,0,1,2]
 console.log(minSorted(arr))
-
+//TC:O(logn)
 
