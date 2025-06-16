@@ -33,6 +33,16 @@ function threeSum(arr) {
 
   return Array.from(result).map(str => str.split(',').map(Number));
 }
+// The result is a Set of strings like:
+// Set { "-1,0,1", "-1,-1,2" }
+// We use Array.from() to convert the Set into an array:
+// [ "-1,0,1", "-1,-1,2" ]
+// 🔪 2. .map(str => str.split(','))
+// Each string triplet like "-1,0,1" is split into an array of strings:
+// "-1,0,1" → ["-1", "0", "1"]
+// 🔁 3. .map(Number)
+// This part converts each string "0", "-1", "1" to actual numbers:
+// ["-1", "0", "1"] → [-1, 0, 1]
 
 let arr = [-1, 0, 1, 2, -1, -4];
 console.log(threeSum(arr));
