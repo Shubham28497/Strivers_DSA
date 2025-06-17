@@ -70,3 +70,4 @@ return result
 let arr2 = [-1, 0, 1, 2, -1, -4];
 console.log(threeSum(arr2));
 // Output: [ [ -1, -1, 2 ], [ -1, 0, 1 ] ]
+//TC:O(n^2)
