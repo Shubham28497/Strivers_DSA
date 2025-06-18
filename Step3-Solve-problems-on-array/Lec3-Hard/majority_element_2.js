@@ -48,3 +48,4 @@ for(let i=0;i<arr.length;i++){
 }
 let arr = [1, 2, 1, 1, 3, 2, 2];
 console.log(majorityElement(arr));
+//TC:O(n)
