@@ -22,3 +22,4 @@ return count
 }
 let arr = [2, 3, 7, 1, 3, 5];
 console.log(countInversion(arr));
+//TC: O(n^2)
