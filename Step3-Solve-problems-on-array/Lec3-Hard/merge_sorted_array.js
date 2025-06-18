@@ -15,3 +15,4 @@ function mergeSortedArrays(arr1,arr2){
 let arr1=[ 1, 3, 5, 7]
 let arr2=[2, 4, 6, 8]
 console.log(mergeSortedArrays(arr1,arr2))
+//TC:O((n + m) log(n + m))
