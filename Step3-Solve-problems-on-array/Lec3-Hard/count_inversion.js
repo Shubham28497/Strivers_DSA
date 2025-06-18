@@ -9,3 +9,16 @@
 // Input: nums = [-10, -5, 6, 11, 15, 17]
 // Output: 0
 // Explanation: nums is sorted, hence no inversions present.
+function countInversion(arr) {
+let count=0;
+for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[i]>arr[j]){
+            count++;
+        }
+    }
+}
+return count
+}
+let arr = [2, 3, 7, 1, 3, 5];
+console.log(countInversion(arr));
