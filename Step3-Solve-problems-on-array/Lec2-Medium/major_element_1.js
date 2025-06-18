@@ -25,19 +25,20 @@ function majorityElement(arr){
 //  2.Optimal approach : Boyer-Moore voting algo
 function majorityElement(arr){
     let count=0;
-    let candidate=null;
+    let el;
     for(let i=0;i<arr.length;i++){
-        if(count==0){
-            candidate=arr[i]
+        if(count===0){
+            count=1;
+            el=arr[i]
         }
-        if(arr[i]===candidate){
+        else if(arr[i]===el){
             count++
         }
         else{
             count--
         }
     }
-    return candidate
+    return el
   }
   let arr2 = [7, 0, 0, 1, 7, 7, 2, 7, 7]
   console.log(majorityElement(arr2))
