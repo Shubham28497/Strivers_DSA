@@ -14,9 +14,9 @@
 function majorityElement(arr) {
 let count1=0; let count2=0;
 let el1; let el2;
-for(let i=0;i<arr.length-1;i++){
+for(let i=0;i<arr.length;i++){
     if(count1===0 && el1!=arr[i]){
-        count=1;
+        count1=1;
         el1=arr[i]
     }
     else if(count2===0 && el2!=arr[i]){
