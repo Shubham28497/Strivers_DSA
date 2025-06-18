@@ -8,3 +8,10 @@
 // Output: [1]
 // Explanation: The arrays we are merging are [1] and [].
 // The result of the merge is [1].
+
+function mergeSortedArrays(arr1,arr2){
+   return[...arr1,...arr2].sort((a,b)=>a-b)
+}
+let arr1=[ 1, 3, 5, 7]
+let arr2=[2, 4, 6, 8]
+console.log(mergeSortedArrays(arr1,arr2))
