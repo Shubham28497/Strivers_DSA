@@ -8,3 +8,19 @@
 
 // Input: nums = [44,22,33,11,1], threshold = 5
 // Output: 44
+
+//1. Brute force approach
+function smallestDivisor(arr,thershold) {
+for(let divisor=1;divisor<=Math.max(...arr);divisor++){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum+=Math.ceil(arr[i]/divisor)
+    }
+    if(sum<=thershold){
+        return divisor;
+    }
+}
+}
+let arr = [1,2,5,9];
+let thershold=6;
+console.log(smallestDivisor(arr,thershold));
