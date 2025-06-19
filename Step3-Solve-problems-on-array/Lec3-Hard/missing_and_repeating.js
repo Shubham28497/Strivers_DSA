@@ -24,3 +24,5 @@ return [missing,repeating]
 
 let arr = [4, 3, 6, 2, 1, 1];
 console.log(findMissingAndRepeating(arr));
+
+//TC:O(n)
