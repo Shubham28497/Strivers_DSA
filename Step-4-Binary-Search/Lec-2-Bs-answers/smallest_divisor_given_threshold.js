@@ -54,3 +54,5 @@ function binSmallestDivisor(arr,thershold){
 let arr2 = [1,2,5,9];
 let thershold2=6;
 console.log(smallestDivisor(arr2,thershold2));
+
+//TC: O(nlog max)
