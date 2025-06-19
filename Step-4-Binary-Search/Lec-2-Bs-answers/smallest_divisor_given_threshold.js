@@ -25,3 +25,32 @@ let arr = [1,2,5,9];
 let thershold=6;
 console.log(smallestDivisor(arr,thershold));
 //TC:O(n*max)
+
+//2. Binary search
+function binSmallestDivisor(arr,thershold){
+    let low=1;
+    let high=Math.max(...arr)
+    let result=-1;
+    function computeSum(divisor){
+        let sum=0;
+        for(let i=0;i<arr.length;i++){
+            sum+=Math.ceil(arr[i]/divisor)
+        }
+        return sum;
+    }
+    while(low<=high){
+        let mid=Math.floor((low+high)/2)
+        let sum=computeSum(mid);
+        if(sum<=thershold){
+            result=mid;
+            high=mid-1
+        }
+        else{
+            low=mid+1;
+        }
+    }
+    return result;
+}
+let arr2 = [1,2,5,9];
+let thershold2=6;
+console.log(smallestDivisor(arr2,thershold2));
