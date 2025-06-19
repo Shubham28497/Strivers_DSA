@@ -16,3 +16,19 @@ let arr1=[ 1, 3, 5, 7]
 let arr2=[2, 4, 6, 8]
 console.log(mergeSortedArrays(arr1,arr2))
 //TC:O((n + m) log(n + m))
+
+function mergeInPlace(arr1,m,arr2,n){
+let i=m-1;
+let j=n-1;
+let k=m+n-1;
+while(j>=0){
+    if(i>=0 && arr1[i]> arr2[j]){
+        arr1[k--] = arr1[i--]
+    } else{
+        arr1[k--] = arr2[j--]
+    }
+}
+}
+arr1 = [1,2,3,0,0,0], m = 3, arr2 = [2,5,6], n = 3
+mergeInPlace(arr1,m,arr2,n)
+console.log(arr1)
