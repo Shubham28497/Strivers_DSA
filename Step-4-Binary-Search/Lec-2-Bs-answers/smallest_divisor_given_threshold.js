@@ -24,3 +24,4 @@ for(let divisor=1;divisor<=Math.max(...arr);divisor++){
 let arr = [1,2,5,9];
 let thershold=6;
 console.log(smallestDivisor(arr,thershold));
+//TC:O(n*max)
