@@ -21,3 +21,4 @@ function countSubarraysWithXorK(arr,k){
 let arr=[4, 2, 2, 6, 4]
 let k=6
 console.log(countSubarraysWithXorK(arr,k))
+//TC:O(n^2)
