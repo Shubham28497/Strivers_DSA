@@ -32,3 +32,4 @@ while(j>=0){
 arr1 = [1,2,3,0,0,0], m = 3, arr2 = [2,5,6], n = 3
 mergeInPlace(arr1,m,arr2,n)
 console.log(arr1)
+//TC:O(m+n)
