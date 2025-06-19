@@ -7,7 +7,7 @@
 
 function findMissingAndRepeating(arr){
 let n=arr.length;
-let S= (n*(n+1)/2);
+let S= (n*(n+1))/2;
 let S2= (n*(n+1)*(2*n+1))/6
 let sum=0; let sqSum=0;
 for(let i=0;i<arr.length;i++){
