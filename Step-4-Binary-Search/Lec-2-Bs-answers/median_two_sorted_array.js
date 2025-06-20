@@ -29,3 +29,4 @@ while(i<arr1.length && j<arr2.length){
 let arr1 = [-5, 3, 6, 12, 15];
 let arr2 = [-12, -10, -6, -3, 4, 10];
 console.log(findMedianSortedArrays(arr1,arr2));
+//TC:O(n+m)
