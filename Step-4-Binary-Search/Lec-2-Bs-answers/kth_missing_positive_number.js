@@ -20,3 +20,4 @@ return k+n;
 let arr = [2, 3, 4, 7, 11];
 let k = 5;
 console.log(findKthMissingPositive(arr, k));
+//TC:O(n)
