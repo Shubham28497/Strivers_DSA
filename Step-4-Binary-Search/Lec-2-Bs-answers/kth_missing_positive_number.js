@@ -43,3 +43,4 @@ function kthMissing(arr, k) {
 const arr2 = [2, 3, 4, 7, 11];
 const k2 = 5;
 console.log(kthMissing(arr2, k2));
+//TC:O(nlogn)
