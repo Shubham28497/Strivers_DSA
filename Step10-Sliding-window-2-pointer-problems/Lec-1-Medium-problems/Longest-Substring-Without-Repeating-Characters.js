@@ -25,3 +25,22 @@ return maxLength
 let s="abcabcbb"
 console.log(lengthOfLongestSubstring(s))
 //TC:O(n)
+// Step 1: right = 0, s[right] = 'a'
+// 'a' not in seen → add 'a' → seen = {'a'}
+
+// Window: s[0...0] = 'a'
+
+// Update maxLength = max(0, 0 - 0 + 1) = 1
+// Step 2: right = 1, s[right] = 'b'
+// 'b' not in seen → add 'b' → seen = {'a', 'b'}
+
+// Window: s[0...1] = 'ab'
+
+// Update maxLength = max(1, 1 - 0 + 1) = 2
+
+// Step 3: right = 2, s[right] = 'c'
+// 'c' not in seen → add 'c' → seen = {'a', 'b', 'c'}
+
+// Window: s[0...2] = 'abc'
+
+// Update maxLength = max(2, 2 - 0 + 1) = 3
