@@ -30,3 +30,4 @@ return maxOnes
 }
 let arr=[1,1,1,0,0,0,1,1,1,1,0] , k=2
 console.log(longestOnes(arr,k))
+//TC:O(n)
