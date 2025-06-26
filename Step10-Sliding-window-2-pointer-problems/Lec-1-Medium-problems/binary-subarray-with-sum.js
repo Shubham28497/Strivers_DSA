@@ -26,3 +26,4 @@ var numSubarraysWithSum = function(nums, goal) {
     return count;
     
 };
+//TC: O(n^2)
