@@ -31,3 +31,4 @@ var numberOfSubarrays = function(nums, k) {
    }
     return atMost(k) - atMost(k-1)
 };
+//TC: O(n)
