@@ -27,3 +27,26 @@ var numSubarraysWithSum = function(nums, goal) {
     
 };
 //TC: O(n^2)
+//2. Window sliding alogirthm
+/**
+ * @param {number[]} nums
+ * @param {number} goal
+ * @return {number}
+ */
+var numSubarraysWithSum = function(nums, goal) {
+   const atMost=(k)=>{
+    if(k<0) return 0;
+    let left=0 
+     let sum=0; 
+     let count=0;
+    for(let right=0; right<nums.length; right++){
+        sum+=nums[right]
+        while(sum>k){
+            sum-=nums[left++]
+        }
+        count+=right-left+1;
+    }
+    return count
+   }
+    return atMost(goal) - atMost(goal-1)
+};
