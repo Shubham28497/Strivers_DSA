@@ -50,3 +50,4 @@ var numSubarraysWithSum = function(nums, goal) {
    }
     return atMost(goal) - atMost(goal-1)
 };
+//TC:O(n)
