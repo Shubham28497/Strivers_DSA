@@ -51,3 +51,9 @@ var numSubarraysWithSum = function(nums, goal) {
     return atMost(goal) - atMost(goal-1)
 };
 //TC:O(n)
+
+// atMost(goal) includes all subarrays with sum 0 up to goal
+
+// atMost(goal - 1) includes all subarrays with sum less than goal
+
+// So the difference is exactly those subarrays with sum == goal
