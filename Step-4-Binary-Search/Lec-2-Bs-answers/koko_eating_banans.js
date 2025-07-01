@@ -19,3 +19,18 @@
 // Output: 23
 
 //Brute force approach
+function minEatingSpeed(piles,h){
+for(let k=1;k<=Math.max(...piles);k++){
+    let hours=0;
+for(let i=0;i<piles.length;i++){
+    hours+=Math.ceil((piles[i]/k))
+}
+if(hours<=h){
+    return k;
+}
+}
+
+}
+let piles = [3, 6, 7, 11]
+let h = 8
+console.log(minEatingSpeed(piles,h))
