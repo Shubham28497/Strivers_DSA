@@ -34,3 +34,4 @@ if(hours<=h){
 let piles = [3, 6, 7, 11]
 let h = 8
 console.log(minEatingSpeed(piles,h))
+//Tc: O(n*max)
