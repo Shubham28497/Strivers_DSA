@@ -42,3 +42,4 @@ function splitArray(nums,k){
     return left;
 }
 console.log(splitArray([7, 2, 5, 10, 8], 2));
+//TC: O(nlog(sum-max))
