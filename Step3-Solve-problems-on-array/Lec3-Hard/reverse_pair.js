@@ -15,3 +15,18 @@
 // (1, 4) --> nums[1] = 4, nums[4] = 1, 4 > 2 * 1
 // (2, 4) --> nums[2] = 3, nums[4] = 1, 3 > 2 * 1
 // (3, 4) --> nums[3] = 5, nums[4] = 1, 5 > 2 * 1
+
+//1. brute force approach
+function reversePairs(nums){
+let count=0;
+for(let i=0;i<nums.length;i++){
+    for(let j=i+1;j<nums.length;j++){
+        if(nums[i]>2*nums[j]){
+            count++
+        }
+    }
+}
+return count;
+}
+let nums=[1, 3, 2, 3, 1]
+console.log(reversePairs(nums))
