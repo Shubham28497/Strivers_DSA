@@ -30,3 +30,5 @@ return count;
 }
 let nums=[1, 3, 2, 3, 1]
 console.log(reversePairs(nums))
+
+//TC: O(n^2)
