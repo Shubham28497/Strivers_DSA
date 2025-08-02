@@ -6,3 +6,4 @@
 
 // Variation 3: Given the number of rows n. Print the first n rows of Pascal’s triangle.
 
+// Variation 1:nCr = n! / (r! * (n-r)!)
