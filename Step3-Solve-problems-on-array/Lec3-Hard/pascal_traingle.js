@@ -20,3 +20,6 @@ function nCr(n,r){
 const row=5;
 const col=3;
 console.log(nCr(row,col))
+
+// TC:O(r)
+// SC:O(1)
