@@ -22,4 +22,4 @@ const col=3;
 console.log(nCr(row,col))
 
 // TC:O(r)
-// SC:O(1)
+// SC:O(1) 
