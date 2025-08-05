@@ -58,7 +58,7 @@ function mergeIntervals(intervals) {
     intervals.sort((a, b) => a[0] - b[0]);
     const res = [intervals[0]] // Initialize with the first interval
     for (let i = 1; i < intervals.length; i++) {
-        const last = res[res.length - 1] // Last merged interval
+        const last = res[res.length - 1] // Last merged interval //So, res[res.length - 1] = res[0] = [1, 3]
         const current = intervals[i]
         if (current[0] <= last[1]) {
             last[1] = Math.max(last[1], current[1])
