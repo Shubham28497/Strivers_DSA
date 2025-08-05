@@ -72,3 +72,5 @@ function mergeIntervals(intervals) {
 const input = [[1, 3], [2, 6], [8, 10], [15, 18]];
 const output = mergeIntervals(input);
 console.log(output); // [[1,6], [8,10], [15,18]]
+//Tc:O(nlogn)
+//SC:O(n)
