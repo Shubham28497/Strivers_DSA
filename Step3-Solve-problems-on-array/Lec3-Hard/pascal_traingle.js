@@ -23,3 +23,5 @@ console.log(nCr(row,col))
 
 // TC:O(r)
 // SC:O(1) 
+
+// Variation 2: Given the row number n. Print the n-th row of Pascal’s triangle.
