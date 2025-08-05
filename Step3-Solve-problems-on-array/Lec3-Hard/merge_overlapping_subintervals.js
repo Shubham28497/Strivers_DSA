@@ -49,3 +49,4 @@ const res = mergeOverlap(arr);
 
 for (const interval of res) 
     console.log(interval[0], interval[1]);
+//TC:O(n^2)
