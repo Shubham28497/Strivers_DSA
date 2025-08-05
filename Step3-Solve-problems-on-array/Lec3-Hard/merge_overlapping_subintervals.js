@@ -74,3 +74,69 @@ const output = mergeIntervals(input);
 console.log(output); // [[1,6], [8,10], [15,18]]
 //Tc:O(nlogn)
 //SC:O(n)
+
+//  Step 1: Input
+
+// intervals = [[1,3], [2,6], [8,10], [15,18]]
+// 🔃 Step 2: Sorting
+// Sort intervals by start time (a[0] - b[0]):
+
+
+// intervals = [[1,3], [2,6], [8,10], [15,18]]
+// (Note: already sorted in this case.)
+
+// 📌 Step 3: Initialize result array
+
+// res = [ [1,3] ]
+// 🔁 Step 4: Loop starts at i = 1
+// 🧩 Iteration 1 (i = 1)
+// current = [2,6]
+
+// last = [1,3]
+
+// Check overlap:
+
+// current[0] = 2
+// last[1] = 3
+// ✅ 2 <= 3 → Overlap exists
+
+// Merge:
+
+// last[1] = max(3, 6) = 6
+// res = [[1, 6]]
+// ✅ Updated last interval in-place.
+
+// 🧩 Iteration 2 (i = 2)
+// current = [8,10]
+
+// last = [1,6]
+
+// Check overlap:
+
+// 8 <= 6 ❌ No overlap
+// Push current to result:
+
+// res = [[1,6], [8,10]]
+// 🧩 Iteration 3 (i = 3)
+// current = [15,18]
+
+// last = [8,10]
+
+// Check overlap:
+
+
+// 15 <= 10 ❌ No overlap
+// Push current to result:
+
+// res = [[1,6], [8,10], [15,18]]
+// ✅ Final Output
+
+// [[1,6], [8,10], [15,18]]
+// Returned by the function.
+
+// 🔚 Summary
+// Step	Last Interval	Current Interval	Overlap?	Action	Result So Far
+// 0	—	[1,3]	—	Initialize	[[1,3]]
+// 1	[1,3]	[2,6]	✅ Yes	Merge → [1,6]	[[1,6]]
+// 2	[1,6]	[8,10]	❌ No	Push	[[1,6], [8,10]]
+// 3	[8,10]	[15,18]	❌ No	Push	[[1,6], [8,10], [15,18]]
