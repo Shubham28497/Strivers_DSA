@@ -51,3 +51,5 @@ function pascalTriangle(n) {
 // Example usage:
 const n = 6;
 pascalTriangle(n);
+// TC:O(r)
+// SC:O(1) 
