@@ -53,3 +53,17 @@ const n = 6;
 pascalTriangle(n);
 // TC:O(r)
 // SC:O(1) 
+
+// Variation 3: Given the number of rows n. Print the first n rows of Pascal’s triangle.
+function pascalTraingle(n){
+    for(let row=0;row<n;row++){
+        let val=1;
+        let rowStr="";
+        for(let col=0;col<=row;col++){
+            rowStr+=val+" ";
+            val=val*(row-col)/(col+1)
+        }
+        console.log(rowStr)
+    }
+}
+pascalTraingle(6)
