@@ -25,3 +25,29 @@ console.log(nCr(row,col))
 // SC:O(1) 
 
 // Variation 2: Given the row number n. Print the n-th row of Pascal’s triangle.
+function nCr(n, r) {
+  let res = 1;
+
+  for (let i = 0; i < r; i++) {
+    res = res * (n - i);
+    res = res / (i + 1);
+  }
+
+  return res;
+}
+
+function pascalTriangle(n) {
+  const row = [];
+
+  // Build the nth row (0-based index)
+  for (let c = 0; c < n; c++) {
+    row.push(nCr(n - 1, c));
+  }
+
+  // Print the entire row as space-separated values
+  console.log(`Row ${n} of Pascal's Triangle:`, row.join(' '));
+}
+
+// Example usage:
+const n = 6;
+pascalTriangle(n);
