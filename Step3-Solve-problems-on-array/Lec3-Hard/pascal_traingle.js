@@ -181,3 +181,22 @@ pascalTraingle(6)
 
 //TC:O(n)
 //SC:O(1)
+
+
+var generate = function(numRows) {
+    const triangle = [];
+
+    for (let row = 0; row < numRows; row++) {
+        const currentRow = [];
+        let val = 1;
+
+        for (let col = 0; col <= row; col++) {
+            currentRow.push(val);
+            val = val * (row - col) / (col + 1); 
+        }
+
+        triangle.push(currentRow);
+    }
+
+    return triangle;
+};
