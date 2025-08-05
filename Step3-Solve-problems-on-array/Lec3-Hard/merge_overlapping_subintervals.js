@@ -47,6 +47,28 @@ function mergeOverlap(arr) {
 const arr = [[7, 8], [1, 5], [2, 4], [4, 6]];
 const res = mergeOverlap(arr);
 
-for (const interval of res) 
+for (const interval of res)
     console.log(interval[0], interval[1]);
 //TC:O(n^2)
+
+//2. Optimised appraoch
+function mergeIntervals(intervals) {
+    if (intervals.length <= 1) return intervals;
+    // Step 1: Sort intervals by start time
+    intervals.sort((a, b) => a[0] - b[0]);
+    const res = [intervals[0]] // Initialize with the first interval
+    for (let i = 1; i < intervals.length; i++) {
+        const last = res[res.length - 1] // Last merged interval
+        const current = intervals[i]
+        if (current[0] <= last[1]) {
+            last[1] = Math.max(last[1], current[1])
+        }
+        else {
+            res.push(current)
+        }
+    }
+    return res;
+}
+const input = [[1, 3], [2, 6], [8, 10], [15, 18]];
+const output = mergeIntervals(input);
+console.log(output); // [[1,6], [8,10], [15,18]]
