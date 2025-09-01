@@ -14,3 +14,12 @@
 // --> linear search
 // --> next index
 //so time complexity will be O(n! * n) which will take more time
+
+//2. optimal appraoch
+// The standard algorithm (O(n)):
+// Find first decreasing element from right (i such that nums[i] < nums[i+1]).
+// If none → reverse whole array (last permutation case).
+// Otherwise:
+// Find the just larger element than nums[i] to the right (j).
+// Swap nums[i] and nums[j].
+// Reverse the subarray from i+1 to end.
