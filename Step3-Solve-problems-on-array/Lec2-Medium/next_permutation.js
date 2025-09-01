@@ -13,3 +13,4 @@
 // --> generate all the permutation
 // --> linear search
 // --> next index
+//so time complexity will be O(n! * n) which will take more time
