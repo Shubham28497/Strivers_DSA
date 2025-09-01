@@ -7,3 +7,9 @@
 // Similarly, the next permutation of arr = [2,3,1] is [3,1,2].
 // While the next permutation of arr = [3,2,1] is [1,2,3] because [3,2,1] does not have a lexicographical larger rearrangement.
 // Given an array of integers nums, find the next permutation of nums.
+
+// 1.Brute force
+// For brute force there will be  3steps
+// --> generate all the permutation
+// --> linear search
+// --> next index
