@@ -23,3 +23,15 @@
 // Find the just larger element than nums[i] to the right (j).
 // Swap nums[i] and nums[j].
 // Reverse the subarray from i+1 to end.
+
+//step 1: Find the first decreasing element from the right
+// Traverse from right to left, find the first index i such that nums[i] < nums[i + 1].
+// If no such index exists, the array is the largest permutation → just reverse it.
+
+// Step2: Find the next greater element on the right of i
+// Traverse from right again, find the first index j such that nums[j] > nums[i].
+
+// Step3: Swap nums[i] and nums[j].
+
+// Step4: Reverse the suffix starting from i + 1
+// Because after index i, the sequence is in descending order, reversing makes it ascending (smallest possible).
