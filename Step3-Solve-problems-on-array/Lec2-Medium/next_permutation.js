@@ -59,3 +59,58 @@ function reverse(nums,start,end){
 }
 //Add tc 
 //O(n)
+
+//Add dry and run steps
+// Input
+// nums = [7, 2, 3, 1, 5, 4, 3, 2, 0]
+// index:  0  1  2  3  4  5  6  7  8
+// n = 9
+
+// Step 1 — Find pivot i (first decreasing element from right)
+
+// We start at i = n - 2 = 7:
+
+// Compare nums[7] = 2 with nums[8] = 0 → 2 >= 0, not valid → i = 6.
+
+// Compare nums[6] = 3 with nums[7] = 2 → 3 >= 2, not valid → i = 5.
+
+// Compare nums[5] = 4 with nums[6] = 3 → 4 >= 3, not valid → i = 4.
+
+// Compare nums[4] = 5 with nums[5] = 4 → 5 >= 4, not valid → i = 3.
+
+// Compare nums[3] = 1 with nums[4] = 5 → 1 < 5 ✅ found pivot.
+
+// 👉 So, i = 3, nums[i] = 1.
+
+// The suffix after index 3 is [5, 4, 3, 2, 0], which is descending.
+
+// Step 2 — Find j (rightmost element > nums[i])
+
+// Start from j = n - 1 = 8:
+
+// nums[8] = 0 → 0 <= 1, not valid → j = 7.
+
+// nums[7] = 2 → 2 > 1 ✅ found j.
+
+// 👉 So, j = 7, nums[j] = 2.
+
+// Step 3 — Swap nums[i] and nums[j]
+
+// Swap indices 3 and 7:
+
+// Before swap: [7, 2, 3, 1, 5, 4, 3, 2, 0]
+// After swap : [7, 2, 3, 2, 5, 4, 3, 1, 0]
+
+// Step 4 — Reverse suffix from i+1 to end
+
+// We need to reverse nums[4..8] = [5, 4, 3, 1, 0].
+
+// Swap nums[4] and nums[8]: swap 5 and 0 → [7, 2, 3, 2, 0, 4, 3, 1, 5]
+
+// Swap nums[5] and nums[7]: swap 4 and 1 → [7, 2, 3, 2, 0, 1, 3, 4, 5]
+
+// nums[6] stays as 3 (middle).
+
+// 👉 Final array:
+
+// [7, 2, 3, 2, 0, 1, 3, 4, 5]
