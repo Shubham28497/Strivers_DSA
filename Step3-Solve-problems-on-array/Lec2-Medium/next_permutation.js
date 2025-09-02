@@ -57,3 +57,5 @@ function reverse(nums,start,end){
         end--
     }
 }
+//Add tc 
+//O(n)
